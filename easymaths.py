@@ -1,4 +1,25 @@
 def arithmetic_operations(num1, num2):
+
+    """
+    Perform basic arithmetic operations on two numbers.
+
+    Parameters:
+        num1 (float or int): The first number.
+        num2 (float or int): The second number.
+
+    Returns:
+        tuple: A tuple containing the results of addition, subtraction,
+               multiplication, and division (if num2 is not zero). If num2
+               is zero, division result will be "Cannot divide by zero".
+    """
+    try:
+        # Input Validation
+        if not (isinstance(num1, (int, float)) and isinstance(num2, (int, float))):
+            raise ValueError("Both inputs must be numeric")
+
+
+
+
     # Addition
     addition = num1 + num2
     # Subtraction
